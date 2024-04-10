@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.spacca.MultiplayerGamePage">
+    <children>
+        <Label layoutX="250.0" layoutY="100.0" text="PARTITA MULTIPLAYER" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="200.0" AnchorPane.topAnchor="100.0">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font></Label>
+        <TextField fx:id="usernameField" layoutX="200.0" layoutY="150.0" promptText="Username" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="200.0" AnchorPane.topAnchor="150.0" />
+        <TextField fx:id="gameCodeField" layoutX="200.0" layoutY="200.0" promptText="Game Code" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="200.0" AnchorPane.topAnchor="200.0" />
+        <Button layoutX="249.0" layoutY="263.0" mnemonicParsing="false" onAction="#accessButtonClicked" text="Accedi" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="200.0" AnchorPane.topAnchor="263.0" />
+        <Label fx:id="messageLabel" layoutX="264.0" layoutY="246.0" />
+    </children>
+</AnchorPane>

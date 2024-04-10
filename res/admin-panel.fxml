@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<VBox alignment="CENTER" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.spacca.AdminPageController">
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20" />
+    </padding>
+    <Label text="Genera Partita" style="-fx-font-size: 20;" />
+    <VBox spacing="10">
+        <TextField fx:id="partitaTextField" promptText="Nome Partita" />
+        <HBox>
+            <TextField fx:id="codiceTextField" promptText="Codice" />
+            <Button text="Genera Codice" onAction="#generaCodiceButtonClicked" prefWidth="200" />
+        </HBox>
+        <Button text="Genera Partita Singola" onAction="#generaPartitaSingolaButtonClicked" prefWidth="200" />
+        <Button text="Genera Partita Multiplayer" onAction="#generaPartitaMultiplayerButtonClicked" prefWidth="200" />
+        <Button text="Genera Torneo" onAction="#generaPartitaTorneoButtonClicked" prefWidth="200" />
+    </VBox>
+</VBox>
